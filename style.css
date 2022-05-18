@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ====== Estas son variables ======= */
+:root {
+    --colorTitulo: #8b8b8b;
+    --colorBotonPaquete: #119aa5;
+    --colorPaqueteBanner: #fdc508;
+    --colorNombrePaquete: #373a3c;
+}
+body {
+    font-family: helvetica;
+}
+.parallax {
+    width: 100%;
+    height: 100vh;
+    background: url(https://javitour.com/wp-content/uploads/2016/04/Atracciones-Tur%C3%ADsticas-de-Ecuador-1_opt-1200x900.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 75%;
+}
+.parallax h2 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+.parallax p {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.abajo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.abajo img {
+    width: 2%;
+}
+.desliza {
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    right: 0;
+}
+
+/* ==== Estilos de las tarjetas ===== */
+.mejoresOfertas {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 7em;
+    padding-bottom: 11em;
+    height: 60vh;
+}
+.tituloPag {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--colorTitulo);
+    padding-bottom: 2em;
+}
+.promociones {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+    width: 100%;
+}
+.card {
+    box-shadow: 0 0 6px rgba(0, 0, .3);
+    text-align: center;
+    padding-bottom: 40px;
+}
+.card img {
+    width: 100%;
+}
+.nombrePaquete {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--colorNombrePaquete);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.textDescripcion {
+    font-size: 1em;
+    color: var(--colorTitulo);
+    padding: 10px 40px 30px 40px;
+}
+.botonVer {
+    text-decoration: none;
+    background-color: var(--colorBotonPaquete);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s all ease;
+}
+.botonVer:hover {
+    background-color: var(--colorPaqueteBanner);
+}
+
+/* ========= Banner de publicidad ======== */
+.bannerPromocion {
+    background-image: url(https://tipsparatuviaje.com/wp-content/uploads/2019/08/gran-muralla-china.jpg);
+    margin-top: 90px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+.info {
+    position: absolute;
+    bottom: 7em;
+    left: 5em;
+}
+.info h2 {
+    font-size: 4em;
+    color: white;
+    margin-bottom: 28px;
+}
+.botonVerBanner {
+    text-decoration: none;
+    background-color: var(--colorPaqueteBanner);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* ====== Estilos para el verano ======= */
+.verano {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 7em;
+    padding-bottom: 8em;
+    text-align: center;
+}
+.verano p {
+    color: var(--colorTitulo);
+}
+
+/* ======= Estilos para el banner 3 ========= */
+.banner3 {
+    background-image: url(imagenes/playa.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 88vh;
+}
+footer {
+    background-color: var(--colorBotonPaquete);
+    color: white;
+    padding: 3em 0;
+    text-align: center;
+    width: 100%;
+}
